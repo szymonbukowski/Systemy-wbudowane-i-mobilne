@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:paddingLeft="16dp"
+              android:paddingRight="16dp"
+              android:orientation="vertical" >
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_weight="0">
+        <ImageView
+                android:layout_width="50dp"
+                android:layout_height="45dp" app:srcCompat="@android:drawable/star_big_on"
+                android:id="@+id/imageView" android:layout_weight="0"
+                android:layout_marginTop="10dp" android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp" android:layout_marginRight="10dp"/>
+        <TextView
+                android:text="@string/about_me"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/tilte" android:textSize="30sp"
+                android:layout_weight="0"
+                android:layout_marginTop="13dp" android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp" android:layout_marginRight="10dp"/>
+
+    </LinearLayout>
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="200dp" android:layout_weight="0" android:scrollbarStyle="outsideOverlay">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:orientation="vertical">
+            <TextView
+                    android:text="@string/me_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:id="@+id/textView3" android:layout_weight="0"/>
+        </LinearLayout>
+    </ScrollView>
+    <Button
+            android:text="Button"
+            android:layout_width="match_parent"
+            android:layout_weight="0" android:layout_height="40dp" android:id="@+id/ame_returnB"/>
+</LinearLayout>

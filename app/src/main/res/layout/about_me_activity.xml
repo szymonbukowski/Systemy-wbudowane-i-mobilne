@@ -4,42 +4,44 @@
               xmlns:tools="http://schemas.android.com/tools"
               android:layout_width="match_parent"
               android:layout_height="match_parent"
-              android:paddingLeft="16dp"
-              android:paddingRight="16dp"
-              android:orientation="vertical" >
+              android:paddingLeft="@dimen/abm_layout_padding_lr"
+              android:paddingRight="@dimen/abm_layout_padding_lr"
+              android:orientation="vertical"
+              android:screenOrientation="portrait">
 
     <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" android:layout_weight="0">
         <ImageView
-                android:layout_width="50dp"
-                android:layout_height="45dp" app:srcCompat="@android:drawable/star_big_on"
-                android:id="@+id/imageView" android:layout_weight="0"
-                android:layout_marginTop="10dp" android:layout_marginBottom="10dp"
-                android:layout_marginLeft="10dp" android:layout_marginRight="10dp"/>
+                android:layout_width="@dimen/abm_star_image_width"
+                android:layout_height="@dimen/abm_star_image_height" app:srcCompat="@android:drawable/star_big_on"
+                android:id="@+id/starIV" android:layout_weight="0"
+                android:layout_marginTop="@dimen/abm_image_margin_tblr" android:layout_marginBottom="@dimen/abm_image_margin_tblr"
+                android:layout_marginLeft="@dimen/abm_image_margin_tblr" android:layout_marginRight="@dimen/abm_image_margin_tblr"/>
         <TextView
-                android:text="@string/about_me"
+                android:text="@string/abm_about_me"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" android:id="@+id/tilte" android:textSize="30sp"
+                android:layout_height="wrap_content" android:id="@+id/title" android:textSize="30sp"
                 android:layout_weight="0"
-                android:layout_marginTop="13dp" android:layout_marginBottom="10dp"
-                android:layout_marginLeft="10dp" android:layout_marginRight="10dp"/>
+                android:layout_marginTop="@dimen/abm_title_margin_t" android:layout_marginBottom="@dimen/abm_title_margin_b"
+                android:layout_marginLeft="@dimen/abm_title_margin_lr" android:layout_marginRight="@dimen/abm_title_margin_lr"/>
 
     </LinearLayout>
     <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="200dp" android:layout_weight="0" android:scrollbarStyle="outsideOverlay">
+            android:layout_height="@dimen/abm_scrollText_height" android:layout_weight="0" android:scrollbarStyle="outsideOverlay">
         <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
                       android:orientation="vertical">
             <TextView
-                    android:text="@string/me_description"
+                    android:text="@string/abm_me_description"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" android:id="@+id/textView3" android:layout_weight="0"/>
+                    android:layout_height="wrap_content" android:id="@+id/meDescriptionTV" android:layout_weight="0"/>
         </LinearLayout>
     </ScrollView>
     <Button
-            android:text="Button"
+            android:text="go back"
             android:layout_width="match_parent"
-            android:layout_weight="0" android:layout_height="40dp" android:id="@+id/ame_returnB"/>
+            android:layout_weight="0" android:layout_height="@dimen/abm_button_height" android:id="@+id/ame_returnB"
+            android:background="@color/colorAccent"/>
 </LinearLayout>

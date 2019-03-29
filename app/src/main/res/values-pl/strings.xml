@@ -1,24 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">BMI</string>
-    <string name="mass_label">Masa [kg]</string>
-    <string name="mass_hint">Wprowadź masę w kilogramach</string>
-    <string name="height_label">Wzrost [cm]</string>
-    <string name="height_hint">Wprowadź wzrost w centymetrach</string>
-    <string name="button_label">LICZ</string>
-    <string name="main_pic_description">mem</string>
-    <string name="severly_underweight">srogo wygłodzony</string>
+    <string name="bmi_mass_label_kg">Masa [kg]</string>
+    <string name="bmi_mass_hint_kg">Wprowadź masę w kilogramach</string>
+    <string name="bmi_height_label_cm">Wzrost [cm]</string>
+    <string name="bmi_height_hint_cm">Wprowadź wzrost w centymetrach</string>
+    <string name="bmi_count_button_label">LICZ</string>
+    <string name="bmi_main_toppic_description">mem</string>
+    <string name="severely_underweight">srogo wygłodzony</string>
     <string name="underweight">niedowaga</string>
     <string name="normal_weight">w normie</string>
     <string name="overweight">nadwaga</string>
     <string name="obese1">otyłość 1. stopnia</string>
     <string name="obese2">otyłość 2. stopnia</string>
     <string name="totaly_obese">poważna otyłość</string>
-    <string name="about_me">O mnie...</string>
-    <string name="me_description">Internet Protocol version 4 (IPv4) is the fourth version of the Internet Protocol
+    <string name="abm_about_me">O mnie...</string>
+    <string name="abm_me_description">Internet Protocol version 4 (IPv4) is the fourth version of the Internet Protocol
         (IP). It is one of the core protocols of standards-based internetworking methods in the Internet, and was the
         first version deployed for production in the ARPANET in 1983. It still routes most Internet traffic today,[1]
         despite the ongoing deployment of a successor protocol, IPv6. IPv4 is described in IETF publication RFC 791
         (September 1981), replacing an earlier definition (RFC 760, January 1980).
     </string>
+    <string name="bmi_input_err">sprawdź wprowadzone dane</string>
+    <string name="bmi_mass_label_lb">Masa [lb]</string>
+    <string name="bmi_mass_hint_lb">Podaj masę w funtach</string>
+    <string name="bmi_mass_err_empty">Masa nie może być pusta</string>
+    <string name="bmi_mass_err_high">Masa jest za wysoka</string>
+    <string name="bmi_mass_err_low">Masa jest za niska</string>
+    <string name="bmi_height_label_in">Wzrost [in]</string>
+    <string name="bmi_height_hint_in">Podaj wzrost w calach</string>
+    <string name="bmi_height_err_empty">Wzrost nie może być pusty</string>
+    <string name="bmi_height_err_high">Wzrost jest za wysoki</string>
+    <string name="bmi_height_err_low">Wzrost jest za niski</string>
+    <string name="bmi_result">Wynik bmi</string>
+    <string name="bmi_category">Kategoria bmi</string>
+    <string name="severely_underweight_description">znaczna niedowaga</string>
+    <string name="underweight_description">niedowaga lorem ipsum</string>
+    <string name="normal_weight_description">waga w normie lorem ipsum</string>
+    <string name="overweight_description">nadwaga lorem ipsum</string>
+    <string name="obese1_description">otyłość pierszej klasy</string>
+    <string name="obese2_description">otyłość drugiej klasy</string>
+    <string name="totaly_obese_description">totalna otyłość</string>
+    <string name="inf_BMI_info">BMI info</string>
+    <string name="bmi_switch_units">zamień jednostki</string>
+    <string name="bmi_switch_units_messege">jednostki zmienione</string>
+    <string name="his_history">Historia</string>
 </resources>

@@ -9,6 +9,25 @@
     <dimen name="bmi_labels_text_size">24sp</dimen>
     <dimen name="bmi_input_text_size">20sp</dimen>
     <dimen name="bmi_result_text_size">55sp</dimen>
-    <dimen name="bmi_description_text_size">30sp</dimen>
+    <dimen name="bmi_category_text_size">30sp</dimen>
     <dimen name="bmi_button_text_size">24sp</dimen>
+
+
+    <dimen name="abm_title_margin_b">10dp</dimen>
+    <dimen name="abm_star_image_width">50dp</dimen>
+    <dimen name="abm_star_image_height">45dp</dimen>
+    <dimen name="abm_layout_padding_lr">16dp</dimen>
+    <dimen name="abm_image_margin_tblr">10dp</dimen>
+    <dimen name="abm_title_margin_lr">10dp</dimen>
+    <dimen name="abm_title_margin_t">15dp</dimen>
+    <dimen name="abm_scrollText_height">200dp</dimen>
+    <dimen name="abm_button_height">40dp</dimen>
+
+    <dimen name="inf_bmiResult_margin_t">30dp</dimen>
+    <dimen name="inf_bmiResult_textSize">36sp</dimen>
+    <dimen name="inf_bmiResult_margin_l">20dp</dimen>
+    <dimen name="inf_description_margin_t">25dp</dimen>
+    <dimen name="inf_ratingbar_margin_e">50dp</dimen>
+    <dimen name="inf_ratingbar_height">45dp</dimen>
+
 </resources>

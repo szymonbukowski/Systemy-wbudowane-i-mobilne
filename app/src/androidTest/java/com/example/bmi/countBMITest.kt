@@ -30,7 +30,7 @@ class countBMITest {
     fun countBMITest() {
         val appCompatEditText = onView(
             allOf(
-                withId(R.id.MassInput),
+                withId(R.id.MassInputET),
                 childAtPosition(
                     childAtPosition(
                         withId(android.R.id.content),
@@ -45,7 +45,7 @@ class countBMITest {
 
         val appCompatEditText2 = onView(
             allOf(
-                withId(R.id.HeightInput),
+                withId(R.id.HeightInputET),
                 childAtPosition(
                     childAtPosition(
                         withId(android.R.id.content),
@@ -60,7 +60,7 @@ class countBMITest {
 
         val appCompatEditText3 = onView(
             allOf(
-                withId(R.id.HeightInput), withText("170"),
+                withId(R.id.HeightInputET), withText("170"),
                 childAtPosition(
                     childAtPosition(
                         withId(android.R.id.content),

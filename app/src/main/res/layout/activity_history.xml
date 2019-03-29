@@ -9,7 +9,7 @@
         tools:context=".HistoryActivity">
 
     <TextView
-            android:text="@string/history"
+            android:text="@string/his_history"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/his_titleTV" app:layout_constraintStart_toStartOf="parent"

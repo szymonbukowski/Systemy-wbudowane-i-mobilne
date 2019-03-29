@@ -3,13 +3,13 @@
 
     <item
             android:id="@+id/AboutMeIt"
-            android:title="@string/about_me"             />
+            android:title="@string/abm_about_me"             />
     <item
             android:id="@+id/SwitchUnitsIt"
-            android:title="@string/switch_units"/>
+            android:title="@string/bmi_switch_units"/>
     <item
             android:id="@+id/HistoryIt"
-            android:title="@string/history"
+            android:title="@string/his_history"
             android:icon="@drawable/ic_history"
             app:showAsAction="always"/>
 

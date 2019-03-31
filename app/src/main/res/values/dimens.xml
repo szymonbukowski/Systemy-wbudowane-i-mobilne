@@ -29,5 +29,8 @@
     <dimen name="inf_description_margin_t">25dp</dimen>
     <dimen name="inf_ratingbar_margin_e">50dp</dimen>
     <dimen name="inf_ratingbar_height">45dp</dimen>
+    <dimen name="rcv_elements_margin_tblr">10dp</dimen>
+    <dimen name="rcv_label_value_tb">0dp</dimen>
+    <dimen name="rcv_TV_width">50dp</dimen>
 
 </resources>

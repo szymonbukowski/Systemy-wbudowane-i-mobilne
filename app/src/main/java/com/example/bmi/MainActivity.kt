@@ -31,27 +31,26 @@ class MainActivity : AppCompatActivity() {
     }
     inline fun <reified T> Gson.fromJson(json: String) = this.fromJson<T>(json, object: TypeToken<T>() {}.type)
     private fun initResultList(){
-        val sharedPref = getPreferences(Context.MODE_PRIVATE)
+        val sharedPref = getSharedPreferences(SHARED_PREFERENCES_NAME,Context.MODE_PRIVATE)
         val gson = Gson()
         val defVal = gson.toJson(ArrayList<BmiDataPack>())
         results = Gson().fromJson<ArrayList<BmiDataPack>>(sharedPref.getString(historyArrayKey,defVal))
 
     }
     private fun save(){
-        val sharedPref = getPreferences(Context.MODE_PRIVATE)
+        val sharedPref = getSharedPreferences(SHARED_PREFERENCES_NAME,Context.MODE_PRIVATE)
         val editor = sharedPref.edit()
         val gson = Gson()
         val json = gson.toJson(results)
-        editor.putString(historyArrayKey,json)
+        editor.putString("HISTORY",json)
         editor.commit()
-        Toast.makeText(this,"commit",Toast.LENGTH_SHORT).show()
+        //Toast.makeText(this,"commit",Toast.LENGTH_SHORT).show()
     }
     private fun recordResult(bmi: BmiDataPack){
-        if (results.size == 10){
-            results.removeAt(0)
-        }
+
+        if (results.size == 10){results.removeAt(0)}
         results.add(bmi)
-        Toast.makeText(this,"record added",Toast.LENGTH_SHORT).show()
+        Toast.makeText(this,results.size.toString(),Toast.LENGTH_SHORT).show()
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
@@ -298,6 +297,7 @@ class MainActivity : AppCompatActivity() {
          const val bmiCategory = "bmiCategory"
          const val resultColor = "resultColor"
 
+        val SHARED_PREFERENCES_NAME = "proPrefs"
         val historyArrayKey = "HISTORY"
     }
 }

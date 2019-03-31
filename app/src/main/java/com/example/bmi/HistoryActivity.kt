@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.LinearLayout
 import android.widget.RelativeLayout
+import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.google.gson.Gson
@@ -25,8 +26,7 @@ class HistoryActivity : AppCompatActivity() {
 
     inline fun <reified T> Gson.fromJson(json: String) = this.fromJson<T>(json, object: TypeToken<T>() {}.type)
     private fun initResultList(){
-        val sharedPref = getPreferences(Context.MODE_PRIVATE)
-        val editor = sharedPref.edit()
+        val sharedPref = getSharedPreferences(MainActivity.SHARED_PREFERENCES_NAME,Context.MODE_PRIVATE)
         val gson = Gson()
         val defVal = gson.toJson(ArrayList<BmiDataPack>())
         historyRecords = Gson().fromJson<ArrayList<BmiDataPack>>(sharedPref.getString(MainActivity.historyArrayKey,defVal))
@@ -35,6 +35,8 @@ class HistoryActivity : AppCompatActivity() {
     fun initRecyclerView(){
         val recycler = his_recycler
         val adapter = HistoryAdapter(historyRecords)
+        Toast.makeText(this,historyRecords.size.toString(),Toast.LENGTH_SHORT).show()
+        if(historyRecords.size == 0) his_titleTV.text = "history empty"
         recycler.adapter = adapter
         recycler.layoutManager = LinearLayoutManager(this)
     }
